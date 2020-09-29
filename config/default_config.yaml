@@ -1,0 +1,12 @@
+sample:
+- plCoAa-1-R1
+- plCoAa-1-R2
+- plCoAa-2
+- plCoAp-1-R1
+- plCoAp-1-R2
+- plCoAp-2
+
+group:
+- plCoA
+
+threads: 8

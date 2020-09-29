@@ -35,5 +35,29 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 
+# Analysis notebooks unrelated to pipeline
+*.nb.html
+
 # R Environment Variables
 .Renviron
+
+# R Profile
+.Rprofile
+
+# Snakemake extras
+.snakemake/
+
+# Apple Icon Files
+.DS_Store
+
+# Sample data
+datasets/
+
+# Logs
+pipe_info/
+
+# Temp files
+tmp/
+
+# Results
+results/
