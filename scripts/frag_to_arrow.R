@@ -18,7 +18,7 @@ createArrowFiles(inputFiles = args[2], # first argument (specified as 2, confusi
                  addTileMat = TRUE,
                  addGeneScoreMat = TRUE,
                  QCDir = paste("pipe_info/logs/frag_to_arrow/"), # makes sure it doesn't create a new QC directory, puts into log
-                 logFile = paste0("pipe_info/logs/frag_to_arrow/", args[4], "/", args[4], "_createArrow_inRscript.txt")
+                 logFile = paste0("pipe_info/logs/frag_to_arrow/", args[4], "/", args[4], "_createArrowFiles.txt")
 )
 
 # filter doublets
@@ -26,5 +26,5 @@ createArrowFiles(inputFiles = args[2], # first argument (specified as 2, confusi
 addDoubletScores(input = args[3], # second argument (specified as 3, confusingly) given in the snakefile is arrow file
                  nTrials = 10, # increase iterations for greater accuracy
                  outDir = paste0("pipe_info/logs/frag_to_arrow/", args[4]), # ensures it stays out of arrow dir, puts into log
-                 logFile = paste0("pipe_info/logs/frag_to_arrow/", args[4], "/", args[4], "/addDoubletScores_inRscript.txt")
+                 logFile = paste0("pipe_info/logs/frag_to_arrow/", args[4], "/", args[4], "_addDoubletScores.txt")
 )

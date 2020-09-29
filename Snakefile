@@ -20,6 +20,6 @@ rule frag_to_arrow:
         "pipe_info/benchmarks/frag_to_arrow/{sample}/{sample}_frag_to_arrow_snakemake.benchmark.txt"
     shell: """
         Rscript scripts/frag_to_arrow.R --args {input} {output} {wildcards.sample} {threads} 2> {log}
-        mv -fv {wildcards.sample}.arrow datasets/arrow/{wildcards.sample}.arrow &&
+        mv -vf {wildcards.sample}.arrow datasets/arrow/{wildcards.sample}.arrow
         rm -rf {wildcards.sample}.arrow
         """
